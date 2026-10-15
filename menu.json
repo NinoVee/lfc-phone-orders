@@ -1,0 +1,160 @@
+{
+  "restaurant": {
+    "name": "Louisiana Fried Chicken & Seafood",
+    "address": "16951 Foothill Blvd, Suite B, Fontana, CA 92335",
+    "phone": "(909) 275-3360",
+    "timezone": "America/Los_Angeles",
+    "hours": {
+      "mon": ["11:30", "20:00"],
+      "tue": ["11:30", "20:00"],
+      "wed": ["11:30", "20:00"],
+      "thu": ["11:30", "20:00"],
+      "fri": ["11:30", "21:00"],
+      "sat": ["11:30", "21:00"],
+      "sun": ["11:30", "17:00"]
+    },
+    "last_order_minutes_before_close": 15,
+    "lunch_menu_hours": null,
+    "card_fee_percent": 3,
+    "payment_note": "Payment is taken at pickup. Credit cards add a 3% processing fee.",
+    "source": "Prices from the restaurant's Toast online-ordering page; item rules from louisianafriedchickenandseafoodie.com/menu. Checked 2026-10-15."
+  },
+
+  "side_choices": [
+    "Collard Greens", "Mac & Cheese", "Fries", "Hushpuppies", "Red Beans & Rice",
+    "Yams", "Mashed Potatoes & Gravy", "Dirty Rice", "Rice", "Potato Salad"
+  ],
+  "fish_types": ["Catfish", "Red Snapper"],
+  "wing_flavors": ["Sweet & Sassy", "Lemon Pepper", "Cajun Rub", "BBQ", "Hot Buffalo"],
+  "oyster_doneness": ["Well Done", "Medium", "Medium Rare", "Rare"],
+  "fish_po_boy_styles": ["Well Done", "Lightly Fried"],
+
+  "items": [
+    { "id": "seafood_family_box", "category": "Seafood Combo Box", "name": "Seafood Family Box", "price": 28.99, "includes": "8 pc fish, 12 shrimp, 6 hushpuppies, 2 large sides", "large_sides": 2, "fish_type": true },
+    { "id": "seafood_chicken_combo_box", "category": "Seafood Combo Box", "name": "#2 Seafood & Chicken Combo Box", "price": 46.23, "includes": "8 pc fish, 12 shrimp, 5 whole wings, 6 hushpuppies, 3 large sides", "large_sides": 3, "fish_type": true },
+
+    { "id": "fish_plate", "category": "Seafood Plates", "name": "Fish Plate", "price": 15.99, "includes": "5 pc fish, 1 side", "sides": 1, "fish_type": true },
+    { "id": "shrimp_plate", "category": "Seafood Plates", "name": "Shrimp Plate", "price": 15.99, "includes": "5 shrimp, 1 side", "sides": 1 },
+    { "id": "oyster_plate", "category": "Seafood Plates", "name": "Oyster Plate", "price": 15.99, "includes": "5 oysters, 1 side", "sides": 1, "oyster_doneness": true },
+    { "id": "fish_shrimp_plate", "category": "Seafood Plates", "name": "Fish & Shrimp Plate", "price": 18.99, "includes": "4 pc fish, 8 shrimp, 1 side", "sides": 1, "fish_type": true },
+    { "id": "fish_oyster_plate", "category": "Seafood Plates", "name": "Fish & Oyster Plate", "price": 18.99, "includes": "4 pc fish, 5 oysters, 1 side", "sides": 1, "fish_type": true, "oyster_doneness": true },
+    { "id": "shrimp_oyster_plate", "category": "Seafood Plates", "name": "Shrimp & Oyster Plate", "price": 18.99, "includes": "8 shrimp, 5 oysters, 1 side", "sides": 1, "oyster_doneness": true },
+
+    { "id": "fish_1", "category": "Fish Only", "name": "1 pc Fish", "price": 2.49, "fish_type": true },
+    { "id": "fish_3", "category": "Fish Only", "name": "3 pc Fish", "price": 6.99, "fish_type": true },
+    { "id": "fish_6", "category": "Fish Only", "name": "6 pc Fish", "price": 12.99, "fish_type": true },
+    { "id": "fish_10", "category": "Fish Only", "name": "10 pc Fish", "price": 16.99, "fish_type": true },
+    { "id": "fish_20", "category": "Fish Only", "name": "20 pc Fish", "price": 31.99, "fish_type": true },
+
+    { "id": "shrimp_1", "category": "Shrimp Only", "name": "1 pc Shrimp", "price": 1.59 },
+    { "id": "shrimp_5", "category": "Shrimp Only", "name": "5 pc Shrimp", "price": 6.99 },
+    { "id": "shrimp_10", "category": "Shrimp Only", "name": "10 pc Shrimp", "price": 13.99 },
+    { "id": "shrimp_20", "category": "Shrimp Only", "name": "20 pc Shrimp", "price": 26.99 },
+
+    { "id": "oyster_5", "category": "Oysters", "name": "5 pc Oysters", "price": 10.99, "oyster_doneness": true },
+
+    { "id": "gumbo", "category": "Specialties", "name": "Gumbo", "price": 16.99, "notes": "Can add 5 shrimp for an extra charge; price not confirmed, so staff will add it at pickup." },
+    { "id": "jambalaya", "category": "Specialties", "name": "Jambalaya with Shrimp", "price": 16.99, "available": false, "notes": "Marked out of stock on Toast on 2026-10-15. Set available to true when it's back." },
+    { "id": "turkey_chop", "category": "Specialties", "name": "Turkey Chop", "price": 16.99 },
+    { "id": "oxtails", "category": "Specialties", "name": "Oxtails", "price": 34.99 },
+
+    { "id": "fish_po_boy", "category": "Po' Boys", "name": "Fish Po' Boy", "price": 12.99, "fish_po_boy_style": true },
+    { "id": "shrimp_po_boy", "category": "Po' Boys", "name": "Shrimp Po' Boy", "price": 13.99 },
+    { "id": "oyster_po_boy", "category": "Po' Boys", "name": "Oyster Po' Boy", "price": 14.99, "oyster_doneness": true },
+    { "id": "chicken_po_boy", "category": "Po' Boys", "name": "Chicken Po' Boy", "price": 12.99 },
+    { "id": "shrimp_sausage_po_boy", "category": "Po' Boys", "name": "Shrimp & Sausage Po' Boy", "price": 17.99 },
+    { "id": "shrimp_oyster_po_boy", "category": "Po' Boys", "name": "Shrimp & Oyster Po' Boy", "price": 18.99, "oyster_doneness": true },
+
+    { "id": "pack_breast", "category": "Chicken Packs", "name": "Breast Pack", "price": 8.99, "includes": "1 breast, 1 side, 1 roll", "sides": 1 },
+    { "id": "pack_thigh", "category": "Chicken Packs", "name": "Thigh Pack", "price": 6.99, "includes": "1 thigh, 1 side, 1 roll", "sides": 1 },
+    { "id": "pack_leg", "category": "Chicken Packs", "name": "Leg Pack", "price": 6.99, "includes": "1 leg, 1 side, 1 roll", "sides": 1 },
+    { "id": "pack_wing", "category": "Chicken Packs", "name": "Wing Pack", "price": 6.99, "includes": "1 wing, 1 side, 1 roll", "sides": 1 },
+    { "id": "pack_2pc_mixed", "category": "Chicken Packs", "name": "2 pc Chicken Pack (thigh, leg or wing)", "price": 8.99, "includes": "2 pieces chosen from thigh, leg, wing; 1 side, 1 roll", "sides": 1, "choose_pieces": { "count": 2, "from": ["Thigh", "Leg", "Wing"] } },
+    { "id": "pack_2pc_wing", "category": "Chicken Packs", "name": "2 pc Wing Pack", "price": 8.99, "includes": "2 wings, 1 side, 1 roll", "sides": 1 },
+    { "id": "pack_3pc_wing", "category": "Chicken Packs", "name": "3 pc Wing Pack", "price": 12.99, "includes": "3 wings, 1 side, 1 roll", "sides": 1 },
+    { "id": "pack_3pc_mixed", "category": "Chicken Packs", "name": "3 pc Chicken Pack (thigh, leg, wing)", "price": 12.99, "includes": "1 thigh, 1 leg, 1 wing, 1 side, 1 roll", "sides": 1 },
+    { "id": "pack_4pc", "category": "Chicken Packs", "name": "4 pc Chicken Pack", "price": 16.99, "includes": "breast, thigh, leg, wing, 1 side, 1 roll", "sides": 1 },
+    { "id": "pack_5pc", "category": "Chicken Packs", "name": "5 pc Chicken Pack", "price": 18.99, "includes": "breast, 2 thighs, leg, wing, 1 side, 1 roll", "sides": 1 },
+
+    { "id": "box_8", "category": "Chicken Box Combos", "name": "8 pc Chicken Box Combo", "price": 26.99, "includes": "2 breasts, 2 thighs, 2 legs, 2 wings, 1 large side, 5 rolls. No substitutions.", "large_sides": 1 },
+    { "id": "box_10", "category": "Chicken Box Combos", "name": "10 pc Chicken Box Combo", "price": 28.99, "includes": "2 breasts, 3 thighs, 3 legs, 2 wings, 1 large side, 5 rolls. No substitutions.", "large_sides": 1 },
+    { "id": "box_12", "category": "Chicken Box Combos", "name": "12 pc Chicken Box Combo", "price": 29.99, "includes": "2 breasts, 4 thighs, 4 legs, 2 wings, 1 large side, 5 rolls. No substitutions.", "large_sides": 1 },
+    { "id": "box_16", "category": "Chicken Box Combos", "name": "16 pc Chicken Box Combo", "price": 41.99, "includes": "4 breasts, 4 thighs, 4 legs, 4 wings, 1 large side, 5 rolls. No substitutions.", "large_sides": 1 },
+    { "id": "box_20", "category": "Chicken Box Combos", "name": "20 pc Chicken Box Combo", "price": 48.99, "includes": "5 breasts, 5 thighs, 5 legs, 5 wings, 1 large side, 5 rolls. No substitutions.", "large_sides": 1 },
+
+    { "id": "strips_3", "category": "Chicken Strips", "name": "3 pc Chicken Strips Box", "price": 10.99, "includes": "3 strips, 1 side, 1 roll", "sides": 1 },
+    { "id": "strips_5", "category": "Chicken Strips", "name": "5 pc Chicken Strips Box", "price": 14.99, "includes": "5 strips, 1 side, 1 roll", "sides": 1 },
+    { "id": "strips_10", "category": "Chicken Strips", "name": "10 pc Chicken Strips Box", "price": 25.99, "includes": "10 strips, 1 large side, 5 rolls", "large_sides": 1 },
+
+    { "id": "only_breast", "category": "Chicken Only", "name": "Breast (chicken only)", "price": 5.99 },
+    { "id": "only_thigh", "category": "Chicken Only", "name": "Thigh (chicken only)", "price": 3.79 },
+    { "id": "only_leg", "category": "Chicken Only", "name": "Leg (chicken only)", "price": 2.79 },
+    { "id": "only_wing", "category": "Chicken Only", "name": "Wing (chicken only)", "price": 2.99 },
+    { "id": "only_5pc_leg_thigh", "category": "Chicken Only", "name": "5 pc Legs & Thighs (chicken only)", "price": 14.99 },
+    { "id": "only_5pc_whole_wings", "category": "Chicken Only", "name": "5 pc Whole Wings (chicken only)", "price": 14.99 },
+    { "id": "only_4pc", "category": "Chicken Only", "name": "4 pc Chicken Only (breast, thigh, leg, wing)", "price": 13.99 },
+    { "id": "only_8pc", "category": "Chicken Only", "name": "8 pc Chicken Only", "price": 21.99, "includes": "2 breasts, 2 thighs, 2 legs, 2 wings" },
+    { "id": "only_10pc", "category": "Chicken Only", "name": "10 pc Chicken Only", "price": 22.99, "includes": "2 breasts, 3 thighs, 3 legs, 2 wings" },
+    { "id": "only_12pc", "category": "Chicken Only", "name": "12 pc Chicken Only", "price": 24.99, "includes": "2 breasts, 4 thighs, 4 legs, 2 wings" },
+    { "id": "only_16pc", "category": "Chicken Only", "name": "16 pc Chicken Only", "price": 32.99, "includes": "4 breasts, 4 thighs, 4 legs, 4 wings" },
+    { "id": "only_20pc", "category": "Chicken Only", "name": "20 pc Chicken Only", "price": 39.99, "includes": "5 breasts, 5 thighs, 5 legs, 5 wings" },
+
+    { "id": "nuggets_10", "category": "Chicken Nuggets", "name": "10 pc Nuggets (only)", "price": 7.99 },
+    { "id": "nuggets_10_combo", "category": "Chicken Nuggets", "name": "10 pc Nuggets Combo", "price": 11.99, "includes": "10 nuggets, 1 side", "sides": 1 },
+
+    { "id": "flavor_wings_5", "category": "Flavor Party Wings", "name": "5 pc Flavor Wings", "price": 9.00, "wing_flavor": true },
+    { "id": "flavor_wings_10", "category": "Flavor Party Wings", "name": "10 pc Flavor Wings", "price": 18.99, "wing_flavor": true },
+    { "id": "flavor_wings_20", "category": "Flavor Party Wings", "name": "20 pc Flavor Wings", "price": 28.99, "wing_flavor": true },
+
+    { "id": "lunch_3pc_fish", "category": "Lunch Menu", "name": "Lunch: 3 pc Fish with 1 side", "price": 7.00, "sides": 1, "fish_type": true, "lunch_only": true },
+    { "id": "lunch_5pc_shrimp", "category": "Lunch Menu", "name": "Lunch: 5 pc Shrimp with 1 side", "price": 8.00, "sides": 1, "lunch_only": true },
+    { "id": "lunch_2_whole_wings", "category": "Lunch Menu", "name": "Lunch: 2 Whole Wings with 1 side", "price": 8.00, "sides": 1, "lunch_only": true },
+    { "id": "lunch_2pc_leg_thigh", "category": "Lunch Menu", "name": "Lunch: 2 pc Leg & Thigh with 1 side", "price": 7.00, "sides": 1, "lunch_only": true },
+    { "id": "lunch_10_nuggets", "category": "Lunch Menu", "name": "Lunch: 10 Nuggets with 1 side", "price": 8.00, "sides": 1, "lunch_only": true },
+
+    { "id": "dessert_banana_pudding", "category": "Desserts", "name": "Banana Pudding", "price": 5.00 },
+    { "id": "dessert_peach_cobbler", "category": "Desserts", "name": "Peach Cobbler", "price": 6.00 },
+    { "id": "dessert_red_velvet", "category": "Desserts", "name": "Red Velvet Cake", "price": 6.00 },
+    { "id": "dessert_cheesecake", "category": "Desserts", "name": "Cheesecake", "price": 6.00 },
+    { "id": "dessert_sweet_potato_pie", "category": "Desserts", "name": "Sweet Potato Pie", "price": 6.00 },
+
+    { "id": "side_collard_greens", "category": "Sides", "name": "Collard Greens (regular)", "price": 4.25 },
+    { "id": "side_mac_cheese", "category": "Sides", "name": "Mac & Cheese (regular)", "price": 4.25 },
+    { "id": "side_fries", "category": "Sides", "name": "Fries (regular)", "price": 4.25 },
+    { "id": "side_hushpuppies", "category": "Sides", "name": "Hushpuppies (regular)", "price": 4.25 },
+    { "id": "side_red_beans_rice", "category": "Sides", "name": "Red Beans & Rice (regular)", "price": 4.25 },
+    { "id": "side_yams", "category": "Sides", "name": "Yams (regular)", "price": 4.25 },
+    { "id": "side_mashed_potatoes", "category": "Sides", "name": "Mashed Potatoes & Gravy (regular)", "price": 4.25 },
+    { "id": "side_gravy", "category": "Sides", "name": "Gravy (regular)", "price": 4.25 },
+    { "id": "side_dirty_rice", "category": "Sides", "name": "Dirty Rice (regular)", "price": 4.25 },
+    { "id": "side_rice", "category": "Sides", "name": "Rice (regular)", "price": 4.25 },
+    { "id": "side_potato_salad", "category": "Sides", "name": "Potato Salad (regular)", "price": 4.25 },
+    { "id": "side_roll", "category": "Sides", "name": "Roll", "price": 0.75 },
+    { "id": "side_cornbread", "category": "Sides", "name": "Cornbread", "price": 1.00 },
+
+    { "id": "sauce_ranch", "category": "Sauces", "name": "Ranch", "price": 0.50 },
+    { "id": "sauce_tartar", "category": "Sauces", "name": "Tartar", "price": 0.50 },
+    { "id": "sauce_cocktail", "category": "Sauces", "name": "Cocktail Sauce", "price": 0.50 },
+    { "id": "sauce_bbq", "category": "Sauces", "name": "BBQ Sauce", "price": 0.50 },
+    { "id": "sauce_remoulade", "category": "Sauces", "name": "Remoulade", "price": 0.50 },
+
+    { "id": "drink_red_koolaid", "category": "Drinks", "name": "Red Kool-Aid", "price": 2.79 },
+    { "id": "drink_grape_koolaid", "category": "Drinks", "name": "Grape Kool-Aid", "price": 2.79 },
+    { "id": "drink_pepsi", "category": "Drinks", "name": "Pepsi (fountain)", "price": 2.79 },
+    { "id": "drink_diet_pepsi", "category": "Drinks", "name": "Diet Pepsi (fountain)", "price": 2.79 },
+    { "id": "drink_orange", "category": "Drinks", "name": "Orange (fountain)", "price": 2.79 },
+    { "id": "drink_starry", "category": "Drinks", "name": "Starry (fountain)", "price": 2.79 },
+    { "id": "drink_dr_pepper", "category": "Drinks", "name": "Dr Pepper (fountain)", "price": 2.79 },
+    { "id": "drink_sweet_tea", "category": "Drinks", "name": "Sweet Tea", "price": 2.79 },
+    { "id": "drink_unsweet_tea", "category": "Drinks", "name": "Unsweetened Tea", "price": 3.00 },
+    { "id": "drink_pepsi_bottle", "category": "Drinks", "name": "Pepsi (bottle)", "price": 3.00 },
+    { "id": "drink_diet_pepsi_bottle", "category": "Drinks", "name": "Diet Pepsi (bottle)", "price": 3.00 },
+    { "id": "drink_root_beer_bottle", "category": "Drinks", "name": "Root Beer (bottle)", "price": 3.00 },
+    { "id": "drink_strawberry_bottle", "category": "Drinks", "name": "Strawberry soda (bottle)", "price": 3.00 },
+    { "id": "drink_grape_bottle", "category": "Drinks", "name": "Grape soda (bottle)", "price": 3.00 },
+    { "id": "drink_gatorade", "category": "Drinks", "name": "Gatorade", "price": 3.00 },
+    { "id": "drink_water", "category": "Drinks", "name": "Bottled Water", "price": 3.00 }
+  ],
+
+  "catering_note": "Catering trays (50 or 100 pc chicken, strips, fish, shrimp, party wings; half-sheet gumbo or jambalaya; side pans) are handled by staff, not the phone agent."
+}

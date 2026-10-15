@@ -1,0 +1,19 @@
+{
+  "name": "lfc-retell-phone-orders",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Retell AI phone-ordering agent for Louisiana Fried Chicken & Seafood (Fontana, CA)",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "SKIP_SIGNATURE_CHECK=true node src/server.js",
+    "prompt": "node src/build-prompt.js",
+    "create-agent": "node src/create-agent.js",
+    "test": "node --test test/*.test.js"
+  },
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "express": "^4.21.2",
+    "retell-sdk": "^4.0.0"
+  }
+}
